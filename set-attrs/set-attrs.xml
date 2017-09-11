@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+ Created by Donat Hutter, donat.hutter@siemens.com, Siemens Building Technologies
+ set-attrs.xml
+ © Copyright Siemens AG, 2015
+-->
+<Module specificationVersion="2.0">
+<ModulePrefs title="Parse and Set Attributes" scrolling="true">
+	<Optional feature="com.ibm.rdm.rm.api"/>
+	<Require feature="dynamic-height"/>
+</ModulePrefs>
+<Content type="html">
+<![CDATA[
+	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="js/set-attrs.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/set-attrs.css">
+
+	<div id="info" class="info"></div>
+	<div id="options" class="optionsContainer">
+		<div class="showHideOptions"></div>
+		<div class="optionsSection">
+			<div>
+				<input id="enableLog" type="checkbox" checked="checked"/>
+				<label for="enableLog">Enable Logging</label>
+			</div>
+		</div>
+	</div>
+	<div id="content"> 
+		<div id="optAttr">
+			<p style="padding-right: 30px;">Search for <strong>[%attribute=value]</strong> and write value to corresponding attribute.</p>
+			<p>&nbsp;</p>
+			<p style="padding-right: 10px;">Search: attribute,attribute:target<br />
+			<input type="text" style="width:100%" id="attrInput"></input></p>
+		</div>
+		<div id="optScope">
+			Set attributes for<br/>
+			<input type="radio" id="sAll" name="scope" value="scopeAll"><label for="sAll"> all requirements</label><br/> 
+			<input type="radio" id="sSel" name="scope" value="scopeSel" checked="true"><label for="sSel"> selected requirements</label><br/>
+			<br/>
+		</div>
+		<div>
+			<button id="setAttr">Set Attributes</button>&nbsp;
+			<button id="delAttr">Remove</button>
+		</div>
+		<div id="progress" style="display:none">
+			<progress id="progressbar" value="0" max="100"></progress>
+			<span id="status"></span>
+		</div>
+		<p id="result" class="info"></p>
+		<div id="log" class="log"></div>
+	</div>
+]]>
+</Content>
+</Module>

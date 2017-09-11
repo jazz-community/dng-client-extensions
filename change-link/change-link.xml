@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+ change-link.xml
+ Chane link types of selected artifacts.
+ 
+ Created by Donat Hutter, donat.hutter@siemens.com, Siemens Building Technologies
+ © Copyright Siemens AG, 2015
+-->
+<Module specificationVersion="2.0">
+<ModulePrefs title="Change Linktype" scrolling="true">
+	<Optional feature="com.ibm.rdm.rm.api"/>
+	<Require feature="dynamic-height"/>
+</ModulePrefs>
+<Content type="html">
+<![CDATA[
+	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="js/change-link.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/change-link.css">
+
+    <div id="info"></div>
+	<div id="options" class="optionsContainer">
+		<div class="showHideOptions"></div>
+		<div class="optionsSection">
+			<div>
+				<input id="enableLog" type="checkbox"/>
+				<label for="enableLog">Enable Logging</label>
+			</div>
+		</div>
+	</div>
+	<div id="content"> 
+		<div class="input-line required">
+			<label for="change-from">From</label>
+			<input type="text" id="sourceType">
+		</div>
+		<div class="input-line required">
+			<label for="change-to">To</label>
+			<input type="text" id="targetType">
+		</div>
+        <div id="artifactSelectContainer">
+			<p>Update links for</p>
+			<input type="radio" id="sAll" name="scope" value="scopeAll" /><label for="sAll"> all requirements</label><br/> 
+			<input type="radio" id="sSel" name="scope" value="scopeSel" checked="true" /><label for="sSel"> selected requirements</label>
+		</div>
+		<div id="actionContainer">
+            <button type="button" id="changeTest" class="button">Test</button>&nbsp;
+            <button type="button" id="changeRun" class="button">Change</button>&nbsp;
+            <button type="button" id="changeClear" class="button">Clear</button>&nbsp;
+		</div>
+		<div id="progress" style="display:none">
+			<progress id="progressbar" value="0" max="100"></progress>
+			<span id="status"></span>
+		</div>
+		<div id="result"></div>
+		<div id="log"></div>
+	</div>
+]]>
+</Content>
+</Module>

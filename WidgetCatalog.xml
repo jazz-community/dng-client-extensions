@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Licensed Materials - Property of IBM
+ WidgetCatalog.xml
+© Copyright IBM Corporation 2013
+
+U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp. 
+
+This file packages the extensions into a catalog that can be used for integration with the Add Widget dialog.  
+-->
+<rdf:RDF 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:ju="http://jazz.net/ns/ui#" 
+	xmlns:dc="http://purl.org/dc/terms/">
+	<ju:catalog-entry>
+		<dc:description>This extension searches for [%attribute=value] in primary text and transfers the value to the corresponding attribute.</dc:description>
+		<dc:title>Parse and Set Attributes</dc:title>
+		<ju:gadget rdf:resource="./set-attrs/set-attrs.xml" />
+		<ju:icon rdf:resource="./set-attrs/set-attrs_icon.png"/>
+		<ju:preview rdf:resource="./set-attrs/set-attrs_pre.png"/>
+		<ju:thumbnail rdf:resource="./set-attrs/set-attrs_thumb.png"/>
+		<ju:category>Requirements Extensions</ju:category> 
+	</ju:catalog-entry>
+	<ju:catalog-entry>
+		<dc:description>This extension changes the link type of selected requirements.</dc:description>
+		<dc:title>Change Link Type</dc:title>
+		<ju:gadget rdf:resource="./change-link/change-link.xml" />
+		<ju:icon rdf:resource="./change-link/change-link_icon.png"/>
+		<ju:preview rdf:resource="./change-link/change-link_pre.png"/>
+		<ju:thumbnail rdf:resource="./change-link/change-link_thumb.png"/>
+		<ju:category>Requirements Extensions</ju:category> 
+	</ju:catalog-entry>	
+</rdf:RDF> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
