@@ -8,6 +8,17 @@ You can add the extensions to your mini dashboard and remove them as needed. Ext
 - For details and additional information [Extending the Requirements Management application](https://jazz.net/wiki/bin/view/Main/RMExtensionsMain) on Jazz.net.
 - See also the presentation [RM-Client-Extensions.pptx](https://github.com/jazz-community/dng-client-extensions/blob/master/Documents/RM-Client-Extensions.pptx) in the document folder.
 
+## Extension Catalog
+Each extension contains a **help** folder providing further information/details about its functionality and usage.
+
+Additional, you find in the root
+- [WidgetCatalog.xml](https://github.com/jazz-community/dng-client-extensions/blob/master/WidgetCatalog.xml) - the catalog file to be loaded into the Jazz server.
+- the other files [RM_API.d.ts](#), [jsconfig.json](#), [package.json](#) are files used for development only.
+
+Proveded Extensions
+- **change-link** - modifies the link type for selected, or all artifacts within a module or a collection.
+- **set-attrs** - extracts data attributes provided in the requirements description and sets the specified attribute.
+
 ## Contributing
 Please use the [Issue Tracker](https://github.com/jazz-community/dng-client-extensions/issues) of this repository to report issues or suggest enhancements.<br>
 Pull requests are very welcome.
