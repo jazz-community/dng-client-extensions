@@ -12,7 +12,7 @@ You can add the extensions to your mini dashboard and remove them as needed. Ext
 Each extension contains a **help** folder providing further information/details about its functionality and usage.
 
 Additional, you find in the root
-- [WidgetCatalog.xml](https://github.com/jazz-community/dng-client-extensions/blob/master/WidgetCatalog.xml) - the catalog file to be loaded into the Jazz server.
+- [WidgetCatalog.xml](http://jazz-community.org/dng-client-extensions/WidgetCatalog.xml) - the catalog file to be loaded into the Jazz server.
 - the other files [RM_API.d.ts](#), [jsconfig.json](#), [package.json](#) are files used for development only.
 
 Proveded Extensions
