@@ -4,6 +4,7 @@
  description of this gadget..
  
  Created by Donat Hutter, donat.hutter@siemens.com, Siemens Schweiz AG
+ © Copyright Siemens AG, 2017
 -->
 <Module specificationVersion="2.0">
 <ModulePrefs title="Change Linktype" scrolling="true">
