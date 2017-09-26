@@ -15,7 +15,7 @@ Additional, you find in the root
 - [WidgetCatalog.xml](http://jazz-community.org/dng-client-extensions/WidgetCatalog.xml) - the catalog file to be loaded into the Jazz server.
 - the other files [RM_API.d.ts](#), [jsconfig.json](#), [package.json](#) are files used for development only.
 
-Proveded Extensions
+### Provided Extensions
 - **[change-link](http://jazz-community.org/dng-client-extensions/change-link/change-link.xml)** - modifies the link type for selected, or all artifacts within a module or a collection.
 - **[set-attrs](http://jazz-community.org/dng-client-extensions/set-attrs/set-attrs)** - extracts data attributes provided in the requirements description and sets the specified attribute.
 
