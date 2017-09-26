@@ -16,8 +16,8 @@ Additional, you find in the root
 - the other files [RM_API.d.ts](#), [jsconfig.json](#), [package.json](#) are files used for development only.
 
 Proveded Extensions
-- **change-link** - modifies the link type for selected, or all artifacts within a module or a collection.
-- **set-attrs** - extracts data attributes provided in the requirements description and sets the specified attribute.
+- **[change-link](http://jazz-community.org/dng-client-extensions/change-link/change-link.xml)** - modifies the link type for selected, or all artifacts within a module or a collection.
+- **[set-attrs](http://jazz-community.org/dng-client-extensions/set-attrs/set-attrs)** - extracts data attributes provided in the requirements description and sets the specified attribute.
 
 ## Contributing
 Please use the [Issue Tracker](https://github.com/jazz-community/dng-client-extensions/issues) of this repository to report issues or suggest enhancements.<br>
@@ -25,4 +25,4 @@ Pull requests are very welcome.
 
 ## Licensing
 Copyright (c) Siemens Schweiz AG. All rights reserved.<br>
-Licensed under the [MIT](https://github.com/jazz-community/dng-client-extensions/blob/master/LICENSE) License.
+Licensed under the [MIT](http://jazz-community.org/dng-client-extensions/LICENSE) License.
