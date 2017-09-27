@@ -3,11 +3,10 @@
  * description of this gadget.
  *
  * Created by Donat Hutter, donat.hutter@siemens.com, Siemens Schweiz AG
+ * © Copyright Siemens AG 2017
  */
 
-// Main Function -   this function is run when the document is ready
 "use strict";
-
 var RM;
 var logEnabled = true;
 var progressMax = 0;
@@ -22,6 +21,7 @@ var sourceType = "";
 var targetType = "";
 var itemsSelected = [];
 
+// Main Function -   this function is run when the document is ready
 $(function () {
     if (window.RM) {
         // The feature is present to address in the current context - Execute the extension behavior as normal

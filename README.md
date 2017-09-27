@@ -8,10 +8,21 @@ You can add the extensions to your mini dashboard and remove them as needed. Ext
 - For details and additional information [Extending the Requirements Management application](https://jazz.net/wiki/bin/view/Main/RMExtensionsMain) on Jazz.net.
 - See also the presentation [RM-Client-Extensions.pptx](https://github.com/jazz-community/dng-client-extensions/blob/master/Documents/RM-Client-Extensions.pptx) in the document folder.
 
+## Extension Catalog
+Each extension contains a **help** folder providing further information/details about its functionality and usage.
+
+Additional, you find in the root
+- [WidgetCatalog.xml](http://jazz-community.org/dng-client-extensions/WidgetCatalog.xml) - the catalog file to be loaded into the Jazz server.
+- the other files [RM_API.d.ts](#), [jsconfig.json](#), [package.json](#) are files used for development only.
+
+### Provided Extensions
+- **[change-link](http://jazz-community.org/dng-client-extensions/change-link/change-link.xml)** - modifies the link type for selected, or all artifacts within a module or a collection.
+- **[set-attrs](http://jazz-community.org/dng-client-extensions/set-attrs/set-attrs)** - extracts data attributes provided in the requirements description and sets the specified attribute.
+
 ## Contributing
 Please use the [Issue Tracker](https://github.com/jazz-community/dng-client-extensions/issues) of this repository to report issues or suggest enhancements.<br>
 Pull requests are very welcome.
 
 ## Licensing
 Copyright (c) Siemens Schweiz AG. All rights reserved.<br>
-Licensed under the [MIT](https://github.com/jazz-community/dng-client-extensions/blob/master/LICENSE) License.
+Licensed under the [MIT](http://jazz-community.org/dng-client-extensions/LICENSE) License.
