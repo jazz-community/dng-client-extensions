@@ -1,0 +1,138 @@
+﻿/*
+ attr-links-ext.css
+ © Copyright Siemens AG
+*/
+
+body {
+	font-family: "Arial";
+	padding: 2px;
+	/* prevent IE from temporarily showing a scrollbar on resize */
+	overflow-y: hidden;
+}
+body, input, button{
+	font-size: 11px;
+}
+body:hover .showHideOptions {
+  opacity: 1;
+}
+p{
+	margin: 2px;
+}
+.info{
+	overflow-y:auto;
+}
+.log{
+	height: 150px;
+	overflow-y:scroll;
+	display: none;
+}
+.msg-entry{
+	/*
+	border: 0px;
+	margin: 0px;
+	*/
+}
+.msg-error{
+	/*
+	border: 2px solid red;
+	padding: 2px;
+	*/
+	color: red;
+}
+.msg-ok{
+/*
+	border: 2px solid green;
+	padding: 2px;
+	*/
+	color: green;
+}
+.msg-head{
+	font-weight: bold;
+	border-top: 1px solid;
+	margin-top: 10px;
+}
+
+#progress{
+	padding: 10px 10px 0 0;
+	height: 20px;
+	overflow-y:auto;
+}
+#progressbar{
+	width:100%;
+	padding: 2px;
+}
+#status {
+    position: relative;
+	margin-left: 10%;
+	font-weight: bold;
+    top: -1.5em;
+}
+
+.optionsContainer {
+  min-height: 2em;
+  position: absolute;
+  top: 0px;
+  z-index: 1000;
+  width: 31px;
+  right: 5px;
+  text-align: right;
+  background-color: white;
+}
+.optionsContainer:hover {
+  width: 150px;
+  background-color: LightYellow;
+}
+.optionsContainer:hover .optionsSection {
+  display: block;
+  height: 60px;
+  border: 1px solid #ADADAD; 
+  box-shadow: 2px 3px 3px rgba(0,0,0,0.25);
+}
+
+.showHideOptions {
+  cursor: pointer;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: 1px solid transparent;
+  position: relative;
+  top: 4px;
+  padding: 0px 2px 0px 2px;
+  background-image: url(settings.png);
+  background-repeat: no-repeat;
+  height: 21px;
+  width: 25px;
+  opacity: 0;
+  display:  inline-block;
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-property: opacity;
+  -moz-transition-duration: 0.25s;
+  transition-property: opacity;
+  transition-duration: 0.25s;
+}
+
+.optionsContainer .optionsSection > div {
+  display: none;
+}
+
+.optionsContainer:hover .optionsSection > div {
+   display: block;
+}
+
+.optionsContainer:hover .showHideOptions {
+  border: 1px solid #ADADAD;
+}
+
+.optionsSection {
+  height: 0px;
+  overflow: hidden;
+  text-align: left;
+  border: 1px solid transparent;
+  padding: 0px 5px 0px 5px;
+  -webkit-transition-property: height;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-property: height;
+  -moz-transition-duration: 0.5s;
+  transition-property: height;
+  transition-duration: 0.5s
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+ erwin.kunz@siemens.com, Siemens Building Technologies
+ WSJF_Calculator.xml
+
+-->
+<Module specificationVersion="2.0">
+<ModulePrefs title="Calculate CoD/WSJF" scrolling="true">
+	<Optional feature="com.ibm.rdm.rm.api"/>
+	<Require feature="dynamic-height"/>
+</ModulePrefs>
+<Content type="html">
+<![CDATA[
+	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="js/WSJF_Calculator.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/WSJF_Calculator.css">
+
+	<div id="options" class="optionsContainer">
+		<div class="showHideOptions"></div>
+		<div class="optionsSection">
+			<div>
+				<input id="enableLog" type="checkbox" checked="checked"/>
+				<label for="enableLog">Enable Logging</label>
+			</div>
+		</div>
+	</div>
+	<div id="content"> 
+
+		<div id="optScope">
+			Set CoD / WSJF for<br/>
+			<input type="radio" id="sAll" name="scope" value="scopeAll"><label for="sAll"> all in Module/Collection</label><br/> 
+			<input type="radio" id="sSel" name="scope" value="scopeSel" checked="true"><label for="sSel"> selected requirements</label><br/>
+			<br/>
+		</div>
+		<div>
+			<button id="setAttr">Run</button>&nbsp;
+		</div>
+		<div id="progress" style="display:none">
+			<progress id="progressbar" value="0" max="100"></progress>
+			<span id="status"></span>
+		</div>
+		<p id="result" class="info"></p>
+		<div id="log" class="log"></div>
+	</div>
+]]>
+</Content>
+</Module>
