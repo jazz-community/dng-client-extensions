@@ -20,7 +20,7 @@ Additional, you find in the root
 - **[set-attrs](http://jazz-community.org/dng-client-extensions/set-attrs/set-attrs)** - extracts data attributes provided in the requirements description and sets the specified attribute.
 
 ## Contributing
-Please use the [Issue Tracker](https://github.com/jazz-community/rtc-absence-widget/issues) of this repository to report issues or suggest enhancements.
+Please use the [Issue Tracker](https://github.com/jazz-community/dng-client-extensions/issues) of this repository to report issues or suggest enhancements.
 
 For general contribution guidelines, please refer to [CONTRIBUTING.md](https://github.com/jazz-community/dng-client-extensions/blob/master/CONTRIBUTING.md)
 
