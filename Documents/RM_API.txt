@@ -1,3 +1,2 @@
 Path to type definition
-
-https://bt-clmserver01.hqs.sbt.siemens.com/rm/web/com/ibm/rdm/web/extensions/api/interface/RM_API.d.ts
+<base path> + /rm/web/com/ibm/rdm/web/extensions/api/interface/RM_API.d.ts
