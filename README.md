@@ -27,3 +27,5 @@ For general contribution guidelines, please refer to [CONTRIBUTING.md](https://g
 ## Licensing
 Copyright (c) Siemens Schweiz AG. All rights reserved.<br>
 Licensed under the [MIT](http://jazz-community.org/dng-client-extensions/LICENSE) License.
+
+The examples are inspired by the examples provided on [jazz.net](https://jazz.net/wiki/bin/view/Main/RMExtensionsMain) and contains [icons published by IBM](https://github.com/jazz-community/dng-client-extensions/blob/master/IBM%20licensed%20material/ibm_license_en.html). The usage of these icons is governed by [this license](https://github.com/jazz-community/dng-client-extensions/blob/master/IBM%20licensed%20material/ibm_license_en.html).
